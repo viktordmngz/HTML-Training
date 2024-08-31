@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Div Practice</title>
+  <style>
+    
+    #borderdiv, #borderspan {
+      border: 2px solid green;
+    }
+
+    #floatdiv {
+      width: 100%;
+      overflow: auto;
+    }
+
+    #floatdiv div {
+      width: 33%;
+      float: left;
+    }
+
+    #inlinediv div{
+      width: 30%;
+      display: inline-block;
+    }
+
+    #flexdiv {
+      display: flex;
+    }
+
+    #flexdiv div {
+      width: 33%;
+    }
+
+    #griddiv {
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>Practicing With Divs</h1>
+  <p>This is not contained in a div.</p>
+  <div id="borderdiv">This is a div.</div>
+  <pre>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita earum tenetur tempore aut doloremque deserunt dignissimos quibusdam nihil impedit laudantium tempora exercitationem aliquid, eveniet id autem rerum ipsam sequi officiis?
+This is an example of an <span id="borderspan">inline element.</span>
+Notice that the div element is a block element and takes the full width of the screen.
+The span element only takes up the necessary width.
+Now, let's look at how to use the div element to format our pages.</pre>
+  
+<h2 style="text-align: center;">Using Divs to align elements</h2>
+
+  <h3 style="text-align: center;">Float Method</h3>
+  <div id="floatdiv">
+    <div style="background-color: bisque;">
+      <h3 style="text-align: center;">Florida</h3>
+      <p>
+        Florida's capital is Tallahassee.
+      </p>
+        <p>Florida is located as south of Georgia and Alabama, to the east of the Gulf of Mexico.</p>
+    </div>
+
+    <div style="background-color: lightsalmon;">
+      <h3 style="text-align: center;">Maine</h3>
+      <p>Maine contains the eastmost point in the USA, a point that is closer to Africa than Miami!</p>
+      <p>Maine contains the eastmost point in the USA, a point that is closer to Africa than Miami!</p>
+      <p>Maine also contains the northernmost point in the contiguous USA. How neat!</p>
+    </div>
+
+    <div style="background-color: lightskyblue;">
+      <h3 style="text-align: center;">Texas</h3>
+      <p>The largest state in the contiguous US, Texas used to be its own country!</p>
+      <p>Texas used to contain parts of New Mexico, Oklahoma, and Colorado.</p>
+    </div>
+
+  </div>
+  <p>The float method is able to align the elements without overlapping each other.</p>
+  <p>Notice how the blocks are able to take on different heights but align at the top and have no gaps.</p>
+  <p>However, float divs must be done in two steps: one to set the width of the parent container and one to set the width of the child blocks.</p>
+  <br>
+  <br>
+
+
+  <h3 style="text-align: center;">Inline-block Method</h3>
+  <div id="inlinediv">
+    <div style="background-color: bisque;">
+      <h3 style="text-align: center;">Florida</h3>
+      <p>
+        Florida's capital is Tallahassee.
+      </p>
+        <p>Florida is located as south of Georgia and Alabama, to the east of the Gulf of Mexico.</p>
+    </div>
+
+    <div style="background-color: lightsalmon;">
+      <h3 style="text-align: center;">Maine</h3>
+      <p>Maine contains the eastmost point in the USA, a point that is closer to Africa than Miami!</p>
+      <p>Maine contains the eastmost point in the USA, a point that is closer to Africa than Miami!</p>
+      <p>Maine also contains the northernmost point in the contiguous USA. How neat!</p>
+    </div>
+
+    <div style="background-color: lightskyblue;">
+      <h3 style="text-align: center;">Texas</h3>
+      <p>The largest state in the contiguous US, Texas used to be its own country!</p>
+      <p>Texas used to contain parts of New Mexico, Oklahoma, and Colorado.</p>
+    </div>
+
+  </div>
+  <p>The inline block method can also take on different heights, but will use the same width for each block.</p>
+  <p>There is a gap between each block. Notice that the blocks line up at the bottom.</p>
+  <p>This method only needs to use a set width and display method on the interior div containers.</p>
+  <br>
+  <br>
+
+
+  <h3 style="text-align: center;">Flex Method</h3>
+  <div id="flexdiv">
+    <div style="background-color: bisque;">
+      <h3 style="text-align: center;">Florida</h3>
+      <p>
+        Florida's capital is Tallahassee.
+      </p>
+        <p>Florida is located as south of Georgia and Alabama, to the east of the Gulf of Mexico.</p>
+    </div>
+
+    <div style="background-color: lightsalmon;">
+      <h3 style="text-align: center;">Maine</h3>
+      <p>Maine contains the eastmost point in the USA, a point that is closer to Africa than Miami!</p>
+      <p>Maine contains the eastmost point in the USA, a point that is closer to Africa than Miami!</p>
+      <p>Maine also contains the northernmost point in the contiguous USA. How neat!</p>
+    </div>
+
+    <div style="background-color: lightskyblue;">
+      <h3 style="text-align: center;">Texas</h3>
+      <p>The largest state in the contiguous US, Texas used to be its own country!</p>
+      <p>Texas used to contain parts of New Mexico, Oklahoma, and Colorado.</p>
+    </div>
+
+  </div>
+  <p>The easiest of these methods. This will set the widths and heights of the blocks automatically (will be the same for each block).</p>
+  <p>The flex method combines the float method and the inline-block method together.</p>
+  <p>Only need to call the display styling on the parent container.</p>
+  <br>
+  <br>
+
+
+  <h3 style="text-align: center;">Grid Method</h3>
+  <div id="griddiv">
+    <div style="background-color: bisque;">
+      <h3 style="text-align: center;">Florida</h3>
+      <p>
+        Florida's capital is Tallahassee.
+      </p>
+        <p>Florida is located as south of Georgia and Alabama, to the east of the Gulf of Mexico.</p>
+    </div>
+
+    <div style="background-color: lightsalmon;">
+      <h3 style="text-align: center;">Maine</h3>
+      <p>Maine contains the eastmost point in the USA, a point that is closer to Africa than Miami!</p>
+      <p>Maine contains the eastmost point in the USA, a point that is closer to Africa than Miami!</p>
+      <p>Maine also contains the northernmost point in the contiguous USA. How neat!</p>
+    </div>
+
+    <div style="background-color: lightskyblue;">
+      <h3 style="text-align: center;">Texas</h3>
+      <p>The largest state in the contiguous US, Texas used to be its own country!</p>
+      <p>Texas used to contain parts of New Mexico, Oklahoma, and Colorado.</p>
+    </div>
+
+  </div>
+  <p>The grid method is similar to the Flex in that it sets the height, but the width is set by the user.</p>
+  <p>The grid method can be used when you want to use different widths on your blocks.</p>
+  <p>This can be useful when some blocks contain more information than others.</p>
+  <br>
+  <br>
+
+  
+</body>
+</html>

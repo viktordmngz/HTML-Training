@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tables</title>
+	<!-- <link rel="icon" type="image/x-icon" href=".Image Assets/html logo.ico"> -->
+
+	<!-- CSS Styling (Internal Mehod)	 -->
+	<style type="text/css">
+
+		h3 { text-align:center; }
+
+	/*	General table formatting rules	*/
+		table {
+			width: 80%;
+			text-align: center;
+		}
+
+	/* Table 2 */
+		/*	Stripped pattern for the table	*/
+		 .table2 tr:nth-child(odd) {
+			background-color: darkgray;
+		}
+
+		/*	Adds a border to the bottom of each row	*/
+		.table2 td, .table2 th {
+			padding: 5px;
+			border-bottom: 1px solid black;
+		/*border-radius: 10px;*/
+		}
+		
+		/*	Eliminate the vertical lines
+		Applies to the entire table under the
+		table element	*/
+		.table2 {
+			border-collapse: collapse;
+			border: 1px solid black;
+		}
+
+		/*	Format the title row a different color	*/
+		.table2 th{
+			background-color: peachpuff;
+			color: black;
+		}
+
+		/*	Highlights table row upon hover	*/
+		.table2 tr:hover {background-color: coral;}
+
+	/* Table 3 */
+		/*	Rounded cells in table 3	*/
+		.table3 td{
+			border: 5px double antiquewhite;
+			background-color: darksalmon;
+			border-radius: 10px;
+		}
+
+		/*	Table 3 header row styling	*/
+		.table3 th{
+			background-color: darkcyan;
+			color: whitesmoke;
+			border: 5px double whitesmoke;
+			border-radius: 10px;
+		}
+
+		/*	Individual cell highlighting	*/
+		.table3 td:hover{
+			/*background-color: whitesmoke;
+			color: darkcyan;*/
+			background-color: white;
+			color: black;
+			border: 5px double darksalmon;
+		}
+
+	/*	Table 4	*/
+		.table4{
+			border-collapse: collapse;
+			margin: 25px 0;
+			font-size: 0.9em;
+			min-width: 400px;
+			border-radius: 5px 0 0 5px;
+			overflow: hidden;
+		}
+
+		.table4 th { 
+			background-color: #009879;
+			color: #ffffff;
+		}
+
+		.table4 tr {
+			height: 40px;
+		}
+
+	/*	Table 5	*/
+		/*	Table 5 general styling	*/
+		.table5{
+			border-collapse: collapse;
+			margin: 25px 0;
+			font-size: 1.1em;
+			border-radius: 5px 5px 0 0;
+			/* Must use overflow: hidden to ensure border radius is applied to top row	*/
+			overflow: hidden;
+			box-shadow:	0 0 20px rgba(0, 0, 0, 0.2);
+		}
+
+		/*	Table 5 heading styling	*/
+		.table5 tr th { 
+			background-color: #009879;
+			color: #ffffff;
+			text-align: left;
+			font-weight: bold;
+			font-family: sans-serif;
+		}
+
+		/*	Table 5 padding	*/
+		.table5 th, .table5 td {
+			padding: 12px 15px;
+		}
+
+		/*	Table 5 alignment	*/
+		.table5 td { text-align:left; }
+
+		/*	Table 5 row styling	*/
+		.table5 tr { 
+			border-bottom:1px solid #dddddd;	
+		}
+		.table5 tr:nth-child(even){
+			background-color: #f3f3f3;
+		}
+
+		/*		Table 5 bottom border match the heading row color	*/
+		.table5 tr:last-of-type {
+			border-bottom: 2px solid #009879;
+		}
+
+		/* Table 5 Active Row styling */
+		.table5 tr.active-row {
+			font-weight: bold;
+			color: #009879;
+		}
+	</style>
+
+
+</head>
+<body>
+	<h1>Practicing With Tables</h1>
+	<p>I will be showcasing the different styles of tables I can make.</p>
+
+	<h3>This is a table with (almost) no styling:</h3>
+	<section>
+		<table class="table1">
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Team</th>
+				<th>Number</th>
+				<th>Country</th>
+			</tr>
+			<tr>
+				<td>Aleksander</td>
+				<td>Barkov</td>
+				<td>Florida Panthers</td>
+				<td>16</td>
+				<td>Finland</td>
+			</tr>
+			<tr>
+				<td>Nathan</td>
+				<td>MacKinnon</td>
+				<td>Colorado Avalanche</td>
+				<td>29</td>
+				<td>Canada</td>
+			</tr>
+			<tr>
+				<td>Auston</td>
+				<td>Matthews</td>
+				<td>Toronto Maple Leafs</td>
+				<td>34</td>
+				<td>USA</td>
+			</tr>
+			<tr>
+				<td>Pavel</td>
+				<td>Datsyuk</td>
+				<td>Detroit Red Wings</td>
+				<td>13</td>
+				<td>Russia</td>
+			</tr>
+		</table>
+	</section>
+	<br>
+
+	<h3>This is a table with border and background color styling:</h3>
+	<section>
+		<table class="table2">
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Team</th>
+				<th>Number</th>
+				<th>Country</th>
+			</tr>
+			<tr class="player1">
+				<td>Sidney</td>
+				<td>Crosby</td>
+				<td>Pittsburgh Penguins</td>
+				<td>87</td>
+				<td>Canada</td>
+			</tr>
+			<tr class="player2">
+				<td>Alexander</td>
+				<td>Ovechkin</td>
+				<td>Washington Capitals</td>
+				<td>8</td>
+				<td>Russia</td>
+			</tr>
+			<tr class="player3">
+				<td>Leon</td>
+				<td>Draisitl</td>
+				<td>Edmonton Oilers</td>
+				<td>29</td>
+				<td>Germany</td>
+			</tr>
+			<tr class="player4">
+				<td>Anze</td>
+				<td>Kopitar</td>
+				<td>Los Angeles Kings</td>
+				<td>11</td>
+				<td>Slovenia</td>
+			</tr>
+		</table>
+	</section>
+	<br>
+
+	<h3>Here is another table with other formatting styles:</h3>
+	<section>
+		<table class="table3">
+			<caption><b>Friend Group Cities</b></caption>
+			<tr>
+				<th>City</th>
+				<th>State</th>
+				<th>Region</th>
+				<th>State Capital</th>
+			</tr>
+			<tr>
+				<td>Delray Beach</td>
+				<td>Florida</td>
+				<td>Southeast</td>
+				<td>Tallahassee</td>
+			</tr>
+			<tr>
+				<td>Green Bay</td>
+				<td>Wisconsin</td>
+				<td>North Midwest</td>
+				<td>Madison</td>
+			</tr>
+			<tr>
+				<td>Kansas City</td>
+				<td>Missouri</td>
+				<td>Central</td>
+				<td>Jefferson City</td>
+			</tr>
+			<tr>
+				<td>Jacksonville</td>
+				<td>Florida</td>
+				<td>Southeast</td>
+				<td>Tallahassee</td>
+			</tr>
+		</table>
+	</section>
+	<br>
+
+	<h3>This is a vertical table:</h3>
+	<section>
+		<table class="table4">
+		<!--<colgroup>
+					<col style="border-radius: 0 5px 5px 0;">
+				</colgroup>-->
+			<tr>
+				<th>First Name</th>
+				<td>Lebron</td>
+				<td>Kevin</td>
+				<td>Kyrie</td>
+			</tr>
+			<tr>
+				<th>Last Name</th>
+				<td>James</td>
+				<td>Durant</td>
+				<td>Irving</td>
+			</tr>
+			<tr>
+				<th>Team Name</th>
+				<td>Los Angeles Lakers</td>
+				<td>Phoenix Suns</td>
+				<td>Dallas Mavericks</td>
+			</tr>
+		</table>
+	</section>
+	<br>
+
+	<h3>This table has different widths:</h3>
+	<section>
+		<table class="table5">
+			<tr>
+				<th style="width: 20px">Rank</th>
+				<th style="width: 200px">First Name</th>
+				<th style="width: 100px">Last Name</th>
+				<th style="width: 150px">Team Name</th>
+				<th style="width: 100px">Sport</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Wayne</td>
+				<td>Gretzky</td>
+				<td>Edmonton Oilers</td>
+				<td>Ice Hockey</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Michael</td>
+				<td>Jordan</td>
+				<td>Chicago Bulls</td>
+				<td>Basketball</td>
+			</tr>
+			<tr class="active-row">
+				<td>Tom</td>
+				<td>Brady</td>
+				<td>New England Patriots</td>
+				<td>Football</td>
+			</tr>
+			<tr>
+				<td>Carmelo</td>
+				<td>Anthony</td>
+				<td>Denver Nuggets</td>
+				<td>Basketball</td>
+			</tr>
+		</table>
+	</section>
+</body>
+</html>

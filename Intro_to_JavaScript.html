@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Intro To JavaScript</title>
+</head>
+<body>
+
+<h1 class="txt">My First JavaScript</h1>
+<p class="txt">Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "./Image Assets/lightbulb_off.jpg";
+    text = '#000000';
+    background = '#ffffff';
+  } else {
+    pic = "./Image Assets/lightbulb_on.jpg";
+    text = '#ffffff';
+    background = '#000000';
+  }
+  document.getElementById('myImage').src = pic;
+  items = document.getElementsByClassName('txt')
+  for (var i = 0; i < items.length; i++) {
+    items[i].style.color = text;
+  }
+  document.body.style.backgroundColor = background;
+}
+</script>
+
+<img id="myImage" src="./Image Assets/lightbulb_off.jpg" width="480" height="360">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+
+</body>
+</html>

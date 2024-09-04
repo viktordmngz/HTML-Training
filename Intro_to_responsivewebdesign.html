@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Intro to Responsive Web Design</title>
+	<style type="text/css">
+		* {
+		  box-sizing: border-box;
+		}
+		.menu {
+			float: left;
+			width: 20%;
+		}
+
+		.menuitem {
+			padding: 8px;
+			margin-top: 7px;
+			border-bottom: 1px solid #f1f1f1;
+		}
+
+		.main{
+			float: left;
+			width: 60%;
+			padding: 0 20px;
+			overflow: hidden;
+		}
+
+		.right{
+			background-color: #009879;
+			float: left;
+			width: 20%;
+			padding: 10px 15px;
+			margin-top: 7px;
+			color: white;
+		}
+
+		.main2, .main3, .right2, .right3 { display:none; }
+
+		@media only screen and (max-width: 800px) {
+			/*	For Tablets		*/
+			.main2 {
+				display: block;
+				float: left;
+				width: 80%;
+				padding: 0;
+			}
+
+			.main {
+				display: none;
+			}
+
+			.right2{
+				display: block;
+				float: left;
+				margin-left: 20%;
+				margin-top: 20px;
+				padding: 15px 0 10px 15px;
+				width: 100%;
+				background-color: darkcyan;
+/*				color: #010103;*/
+				}
+
+			.right {
+				display: none;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+			/*	For Smartphones		*/
+			.main3, .right3 { display: block; }
+			.main2, .right2 { display: none;}
+
+			.right3 {
+				background-color: darkcyan;
+				padding: 15px 0 10px 15px;
+			}
+
+			.menu { margin-bottom: 20px; }
+			.main3, .menu, .right3 {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+<body style="font-family: Verdana;">
+	<div style="background-color: #f1f1f1; padding: 15px">
+		<h1>Le Restaurante</h1>
+		<h3>Change the size of your browser to see a new layout.</h3>
+	</div>
+
+	<div style="overflow: auto;">
+		<div class="menu">
+			<div class="menuitem">Omelette du fromage</div>
+			<div class="menuitem">Krabby Patty</div>
+			<div class="menuitem">Spaghetti Tacos</div>
+		</div>
+
+		<div class="main">
+			<h2>Omelette du fromage</h2>
+			<p>Made with farm-fresh eggs and three cheeses, <b>Le Restaurante's</b> <i>Omelette du fromage</i> is a classic for any breakfast-lover. Enjoy the classic taste of scrambled eggs with Le Restaurante's twist, using fresh cracked pepper and salt and a sprinkling of fresh chives.</p>
+			<img src="https://media4.giphy.com/media/xuHXtEpDYgdBS/200w.gif?cid=6c09b952pt85ys8yn2s73ykfadpror4wkq5sihxnm2r01uex&ep=v1_gifs_search&rid=200w.gif&ct=g" style="width: 100%;">
+		</div>
+
+		<div class="main2">
+			<h2>Krabby Patty</h2>
+			<p>Nobody knows how to make a true <i>Krabby Patty</i>, but that won't stop <i>Le Restaurante</i> from trying. Made with a quarter pound of USDA Choice cut beef (and possibly a secret ingredient), our <i>Krabby Patty</i> is sure to make your mouth water like you're under the sea!</p>
+			<img src="https://media.thepopverse.com/media/krabby-patty-image-1f3i5bdxcaqfvbeklc5bh1vr2u.jpg" style="width: 100%;">
+		</div>
+
+		<div class="main3">
+			<h2>Spaghetti Tacos</h2>
+			<p>Spaghetti? Good. Tacos? Delicious! But together? Don't knock it till you try it. <b>Le Restaurante</b> brings this dish from the beloved show, <i>iCarly</i>, and brings its own little twist with <i>spicy calabrian sauce</i> and delicious <i>parmasean cheese</i>.</p>
+			<img src="https://i.pinimg.com/originals/60/11/70/601170bf549ec2b148dee0ef7eef9420.jpg" style="width: 100%;">
+		</div>
+
+		<div class="right">
+			<h2>Ingredients</h2>
+			<ul>
+				<li>Eggs</li>
+				<li>Cheese</li>
+				<li>Butter/Oil</li>
+				<li>Salt & Pepper</li>
+				<li>Chives/Thyme</li>
+			</ul>
+			<h2>Price</h2>
+			<p>$14.99</p>
+			<h2>Health Benefits</h2>
+			<ul>
+				<li>Gluten Free</li>
+				<li>Vegetarian</li>
+				<li>GMO Free</li>
+				<li>Allergen Free</li>
+			</ul>
+		</div>
+
+		<div class="right2">
+			<h2>Ingredients</h2>
+			<ul>
+				<li>Beef</li>
+				<li>Lettuce</li>
+				<li>Onion</li>
+				<li>Salt & Pepper</li>
+				<li>Cheese</li>
+			</ul>
+			<h2>Price</h2>
+			<p>$9.99</p>
+			<h2>Health Benefits</h2>
+			<ul>
+				<li>None, but it is delicious!</li>
+			</ul>
+		</div>
+
+		<div class="right3">
+			<h2>Ingredients</h2>
+			<ul>
+				<li>Spaghetti</li>
+				<li>Tortilla Shells (Hard or Soft)</li>
+				<li>Spicy Calabrian Sauce</li>
+				<li>Parmesean Cheese</li>
+				<li>Oregano</li>
+				<li>Fresh Parsely</li>
+			</ul>
+			<h2>Price</h2>
+			<p>$8.99 for 2</p>
+			<h2>Alternatives and Healthy Options</h2>
+			<ul>
+				<li>Gluten Free option</li>
+				<li>Vegetarian</li>
+				<li>GMO Free</li>
+				<li>Dairy Free option</li>
+			</ul>
+		</div>
+	</div>
+
+	<div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
+		This web page is a demonstration for responsive displays. I followed an example and lessons from W3 schools. Please try resizing the web browser to see how the layout changes.
+	</div>
+
+</body>
+</html>

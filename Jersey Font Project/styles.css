@@ -14,6 +14,8 @@ Please enjoy and feel free to change the colors around (I used the colors I did 
 
 */
 
+:root {--garnet: darkred }
+
 h1 {
   text-align: center;
 }
@@ -48,6 +50,14 @@ h1 {
   z-index: 0;
 }
 
+.black-bg {
+  background-color: black;
+}
+
+.garnet-bg{
+  background-color: var(--garnet);
+}
+
 /* BLACK GOLD TEXT */
 #black-gold-outer{
   color: black;
@@ -58,6 +68,45 @@ h1 {
   -webkit-text-stroke: 7px black;
 }
 
+/* BLACK WHITE GOLD TEXT */
+#black-white-gold-inner{
+  color: black;
+  -webkit-text-stroke: 2px white;
+}
+
+#black-white-gold-outer {
+  -webkit-text-stroke: 7px wheat;
+}
+
+/* BLACK WHITE BLACK TEXT */
+#black-white-inner{
+  color: black;
+  -webkit-text-stroke: 2px white;
+}
+
+#black-white-outer{
+  -webkit-text-stroke: 7px black;
+}
+
+/* BLACK PINK BLACK TEXT */
+#black-pink-inner{
+  color: black;
+  -webkit-text-stroke: 2px pink;
+}
+
+#black-pink-outer{
+  -webkit-text-stroke: 7px black;
+}
+
+/* BLACK SILVER BLACK TEXT */
+#black-silver-inner{
+  color: black;
+  -webkit-text-stroke: 2px silver;
+}
+
+#black-silver-outer{
+  -webkit-text-stroke: 7px black;
+}
 
 /* WHITE BLACK PINK TEXT */
 #whiteout-black-inner{
@@ -89,23 +138,134 @@ h1 {
   -webkit-text-stroke: 7px pink;
 }
 
-/* BLACK WHITE BLACK TEXT */
-#black-white-inner{
-  color: black;
+/* NAVY WHITE RED TEXT */
+#navy-white-red-inner{
+  color: navy;
   -webkit-text-stroke: 2px white;
 }
 
-#black-white-outer{
-  -webkit-text-stroke: 7px black;
+#navy-white-red-outer{
+  -webkit-text-stroke: 7px var(--garnet);
 }
 
-/* BLACK PINK BLACK TEXT */
-#black-pink-inner{
+/* RED WHITE NAVY TEXT */
+#red-white-navy-inner{
+  color: var(--garnet);
+  -webkit-text-stroke: 2px white;
+}
+
+#red-white-navy-outer{
+  -webkit-text-stroke: 7px navy;
+}
+
+/* WHITE BLACK WHITE TEXT */
+#white-black-white-inner{
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+#white-black-white-outer{
+  -webkit-text-stroke: 7px white;
+}
+
+/* WHITE BLACK GOLD TEXT */
+#white-black-gold-inner{
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+#white-black-gold-outer{
+  -webkit-text-stroke: 7px wheat;
+}
+
+
+/* ---FSU COLOR SCHEMES--- */
+/* BLACK GOLD GARNET TEXT */
+#black-gold-garnet-inner{
   color: black;
-  -webkit-text-stroke: 2px pink;
+  -webkit-text-stroke: 2px wheat;
 }
 
-#black-pink-outer{
+#black-gold-garnet-outer{
+  -webkit-text-stroke: 7px var(--garnet);
+}
+
+/* GOLD BLACK GARNET TEXT */
+#gold-black-garnet-inner{
+  color: wheat;
+  -webkit-text-stroke: 3px black;
+}
+
+#gold-black-garnet-outer{
+  -webkit-text-stroke: 7px var(--garnet);
+}
+
+/* GARNET BLACK GOLD TEXT */
+#garnet-black-gold-inner{
+  color: var(--garnet);
+  -webkit-text-stroke: 3px black;
+}
+
+#garnet-black-gold-outer{
+  -webkit-text-stroke: 7px wheat;
+}
+
+/* GARNET GOLD BLACK TEXT */
+#garnet-gold-black-inner{
+  color: var(--garnet);
+  -webkit-text-stroke: 3px wheat;
+}
+
+#garnet-gold-black-outer{
   -webkit-text-stroke: 7px black;
 }
 
+/* GARNET GOLD GARNET TEXT */
+#garnet-gold-garnet-inner{
+  color: var(--garnet);
+  -webkit-text-stroke: 3px wheat;
+}
+
+#garnet-gold-garnet-outer{
+  -webkit-text-stroke: 7px var(--garnet);
+}
+
+/* WHITE GARNET GOLD TEXT */
+#white-garnet-gold-inner{
+  color: white;
+  -webkit-text-stroke: 2px var(--garnet);
+}
+
+#white-garnet-gold-outer{
+  -webkit-text-stroke: 7px wheat;
+}
+
+/* BLACK GARNET GOLD TEXT */
+#black-garnet-gold-inner{
+  color: black;
+  -webkit-text-stroke: 2px var(--garnet);
+}
+
+#black-garnet-gold-outer{
+  -webkit-text-stroke: 7px wheat;
+}
+
+/* BLACK GOLD BLACK TEXT */
+#black-gold-black-inner{
+  color: black;
+  -webkit-text-stroke: 2px wheat;
+}
+
+#black-gold-black-outer{
+  -webkit-text-stroke: 7px black;
+}
+
+/* GARNET WHITE GOLD TEXT */
+#garnet-white-gold-inner{
+  color: var(--garnet);
+  -webkit-text-stroke: 2px white;
+}
+
+#garnet-white-gold-outer{
+  -webkit-text-stroke: 7px wheat;
+}

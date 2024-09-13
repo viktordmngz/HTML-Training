@@ -1,10 +1,10 @@
 /*
 Created On: 09/12/2024 (MM/DD/YYYY)
-Last Updated: 09/12/2024 (MM/DD/YYYY)
+Last Updated: 09/13/2024 (MM/DD/YYYY)
 Editor Used: VS Studio
 Created By: Viktor Dominguez
 
-This is a project I made for a friend who is designing jerseys and wanted an example of different font styles he could use.
+This is a project I made for a friend who is designing jerseys and wanted an example of different font coloring he could use.
 
 I made this HTML file to demonstrate my designs to him. 
 While I was building this file, I found that many online sources stated the 2-border font is "impossible"
@@ -109,14 +109,13 @@ h1 {
 }
 
 /* WHITE BLACK PINK TEXT */
-#whiteout-black-inner{
+#white-black-pink-inner{
   -webkit-text-stroke: 2px Black;
 }
 
-#whiteout-black-outer{
+#white-black-pink-outer{
   -webkit-text-stroke: 7px pink;
 }
-
 
 /* PINK WHITE BLACK TEXT */
 #pink-black-inner{
@@ -178,6 +177,16 @@ h1 {
   -webkit-text-stroke: 7px wheat;
 }
 
+/* PINK BLACK PINK TEXT */
+#pink-black-pink-inner{
+  color: pink;
+  -webkit-text-stroke: 2px black;
+}
+
+#pink-black-pink-outer{
+  -webkit-text-stroke: 7px pink;
+}
+
 
 /* ---FSU COLOR SCHEMES--- */
 /* BLACK GOLD GARNET TEXT */
@@ -197,6 +206,16 @@ h1 {
 }
 
 #gold-black-garnet-outer{
+  -webkit-text-stroke: 7px var(--garnet);
+}
+
+/* WHITE GOLD GARNET TEXT */
+#white-gold-garnet-inner{
+  color: white;
+  -webkit-text-stroke: 2px wheat;
+}
+
+#white-gold-garnet-outer{
   -webkit-text-stroke: 7px var(--garnet);
 }
 
@@ -220,6 +239,26 @@ h1 {
   -webkit-text-stroke: 7px black;
 }
 
+/* GOLD GARNET BLACK TEXT */
+#gold-garnet-black-inner{
+  color: wheat;
+  -webkit-text-stroke: 3px var(--garnet);
+}
+
+#gold-garnet-black-outer{
+  -webkit-text-stroke: 7px black;
+}
+
+/* GOLD GARNET GOLD TEXT */
+#gold-garnet-gold-inner{
+  color: wheat;
+  -webkit-text-stroke: 3px var(--garnet);
+}
+
+#gold-garnet-gold-outer{
+  -webkit-text-stroke: 7px wheat;
+}
+
 /* GARNET GOLD GARNET TEXT */
 #garnet-gold-garnet-inner{
   color: var(--garnet);
@@ -238,6 +277,26 @@ h1 {
 
 #white-garnet-gold-outer{
   -webkit-text-stroke: 7px wheat;
+}
+
+/* WHITE GARNET WHITE TEXT */
+#white-garnet-white-inner{
+  color: white;
+  -webkit-text-stroke: 2px var(--garnet);
+}
+
+#white-garnet-white-outer{
+  -webkit-text-stroke: 7px white;
+}
+
+/* WHITE GOLD WHITE TEXT */
+#white-gold-white-inner{
+  color: white;
+  -webkit-text-stroke: 2px wheat;
+}
+
+#white-gold-white-outer{
+  -webkit-text-stroke: 7px white;
 }
 
 /* BLACK GARNET GOLD TEXT */

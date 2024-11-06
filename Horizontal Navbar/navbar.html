@@ -1,0 +1,122 @@
+<!--  
+  Created By: Viktor Dominguez
+  Created On: 10/30/2024 (MM/DD/YYYY)
+  Last Updated: 11/06/2024 (MM/DD/YYYY)
+  Created with the examples from W3 Schools CSS tutorials.
+  
+  Navbar examples that demonstrate how to build and use horizontal navbars.
+  The navbars are built using lists and CSS.
+  Feel free to use and change the code as this is not protected by any copyrights.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="navbar.css">
+  <script src="navbar.js" defer></script>
+  <title>Navbar Practice</title>
+</head>
+<body>
+  <h1>CSS <span class="header">Horizontal Navbars</span></h1>
+  <p>There are two ways to make horizontal navbars: <b>Inline</b> and <b>Float.</b></p>
+  <p>Let's look at the <b>Inline</b> method first.</p>
+  
+  <!-- Horizontal Inline -->
+  <section>
+  <h2 style="margin: 5px 0px;">Inline List Items</h2>
+  <p>Inline elements are elements that are placed in the same "row".</p>
+  <p>This is useful when we want to line up elements across the page.</p>
+  <br>
+  <!-- <iframe src="" frameborder="0"></iframe> -->
+    <div class="horizontal-navbar1">
+      <ul class="horizontal-inline">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+    
+    <p style="margin-top: 30px;">This is an example of a simple navbar, with minimal styling.</p>
+    <ul>
+      <li style="font-size: 14px; font-style: oblique;">Technically speaking, this is actually a horizontal list.</li>
+    </ul>
+    <p><b>NOTE: </b>These links will not lead anywhere, they are just for visual representation.</p>
+    <p>When you click on a link, look at what happens to the URL.</p>
+  </section>
+  <p>Let's add some styling to the previous navbar:</p>
+  <section>
+    <div class="horizontal-navbar2">
+      <ul class="horizontal-inline">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+    <p>Things that were changed:</p>
+    <ul style="list-style-type: circle;">
+      <li>Text decoration for the links</li>
+      <li>Text color</li>
+      <li>Background color</li>
+      <li>Spacing between links</li>
+      <li>Hover functionality</li>
+    </ul>
+    
+  </section>
+  <br>
+  <p>Now we will see how to build the same type of navbars with floating elements.</p>
+  
+  <!-- Horizontal Float -->
+  <section style="margin-top: 30px;">
+    <h2>Floating List Items</h2>
+    <p>The <b>float</b> property makes it easy to line up elements.</p>
+    <div class="horizontal-navbar3" style="margin-top: 20px;">
+      <ul class="horizontal-float">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </section>
+  <p>Some things to notice about the <b>float</b> method:</p>
+  <ol>
+    <li>The amount of space that the bar takes up is now only as long as needed.</li>
+    <li>The link area starts flush with the beginning of the navbar (as seen by the hover behavior).</li>
+    <li>The spacing is slightly more narrow, despite both bars using the same padding on the links.</li>
+  </ol>
+  <br>
+  <p>We could move the navbar to the right side using <span>float: right</span> instead.</p>
+  <div class="horizontal-navbar3-alt" style="margin-top: 20px;">
+    <ul class="horizontal-float-alt">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+  <p>We can add other stylings and even a dropdown menu in the navbar.</p>
+  <div class="horizontal-navbar4" style="margin-top: 20px;">
+    <ul class="horizontal-float">
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="dropdown"><a href="javascript:void(0)" class="droplink">Dropdown</a>
+        <div class="drop-content">
+          <a href="#item">Item 1</a>
+          <a href="#item">Item 2</a>
+          <a href="#item">Item 3</a>
+          <a href="#item">Item 4</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <br>
+  <p>As you can see here, I have added an "active" indicator that highlights the link last selected.</p>
+  <p>Notice that even though the other navbars lead to the same pages, clicking their links does not affect the active class.</p>
+</body>
+</html>

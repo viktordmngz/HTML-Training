@@ -1,0 +1,130 @@
+/* 
+<!-- 
+Created By: Viktor Dominguez
+
+Created: 11/21/2024 (MM/DD/YYYY)
+Last Updated: 11/21/2024 (MM/DD/YYYY)
+
+Editor: VS Code
+
+ABOUT: Simple pricing card template. Practicing shadows, alignment, and icons.
+-->
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f7f8fc;
+  font-family: 'Radio Canada', Verdana, Georgia, sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  width: 350px;
+  margin: 20px;
+  background-color: white;
+  border: 1px solid #dae1f5;
+  border-radius: 10px;
+
+}
+
+.price-card .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 40px 50px;
+  background-color: #f7f8fc;
+  border-radius: 10px 10px 0 0;
+}
+
+.price-card .header .plan {
+  display: block;
+  color: #10182f;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.price {
+  color: #10182f;
+  font-size: 46px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.frequency {
+  display: block;
+  color: #10182f;
+  font-size: 20px;
+  line-height: 33px;
+  margin-bottom: 27px;
+}
+
+.start-button {
+  background-color: #10182f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.3s;
+  letter-spacing: 0.1em;
+}
+
+.price-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 3px 10px hsla(226, 41%, 42%, 0.655);
+}
+.start-button:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 3px 10px hsla(226, 41%, 42%, 0.555);
+}
+.header:hover .price {
+  transform: scale(1.05);
+  text-shadow: 2px 3px 4px hsla(226, 41%, 42%, 0.655);
+}
+
+.features {
+  padding: 30px 62px 40px;
+}
+
+.features li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.features li:last-child {
+  margin-bottom: 0;
+}
+
+.features li i{
+  width: 20px;
+  margin-right: 10px;
+}
+
+.fa-check {
+  color: #02ca8e;
+}
+.fa-xmark {
+  color: #ff0000;
+}
+
+.checklist {
+  color: #10182f;
+  font-weight: 500;
+}

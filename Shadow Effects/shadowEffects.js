@@ -12,6 +12,20 @@ Project to practice text and box shadow effects. At the end, there is an example
 This is only meant as a tutorial and should only be taken as such. This is in no way a finished website.
 */
 
+/* 
+Created By: Viktor Dominguez
+
+Started: 11/19/2024 (MM/DD/YYYY)
+Last Updated: 11/20/2024 (MM/DD/YYYY)
+
+About: JavaScript for two functions: 1 for the changing viewport and 1 for the toggle button.
+**STILL NOT COMPLETE**
+
+Project to practice text and box shadow effects. At the end, there is an example of pricing cards which uses both styles of shadowing.
+
+This is only meant as a tutorial and should only be taken as such. This is in no way a finished website.
+*/
+
 
 function myFunc() {
   var x = document.getElementById("price-card-container");
@@ -33,7 +47,7 @@ function myFunc() {
       y[i].style.width = "100%";
       y[i].style.margin = "10px 0";
       y[i].style.position = "relative";
-      y[i].style.left = "-5px";
+      // y[i].style.right = "5px";
       y[i].style.float = "top";
     }
     }
@@ -54,7 +68,7 @@ function myFunctionScreenSize(screen) {
       y[i].style.float = "top";
       y[i].style.overflowWrap = "break-word";
       y[i].style.margin = "10px";
-      y[i].style.width = "100%";
+      y[i].style.width = "90%";
       y[i].style.height = "calc(31% - 10px)";
       y[i].style.padding = "10px 0";
     }

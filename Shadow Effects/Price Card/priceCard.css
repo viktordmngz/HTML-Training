@@ -95,7 +95,7 @@ body {
 }
 .header:hover .price {
   transform: scale(1.05);
-  text-shadow: 2px 3px 4px hsla(226, 41%, 42%, 0.655);
+  text-shadow: 2px 3px 2px hsla(226, 41%, 42%, 0.655);
 }
 
 .features {
